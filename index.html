@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="refresh" content="30">
+     <title> Exercise </title>
+     <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body onload="fctime()"> <!--Qndo a pagina carregar ira carregar a function-->
+
+    <header>  
+          <div class="decricao">
+               <h3> Relógio Virtual</h3>
+               <p> Um relógio virtual que muda a cor de fundo e a imagem de acordo com o período do dia (como mostrado nos exemplos no rodapé da página).</p>
+          </div>
+
+          <h1> Hora do Dia </h1>
+     </header>
+
+     <section>
+          <div id='msg' class="time"> <!--Hora atual feita no JS-->   </div>
+          <div id='foto'>
+               <img id='imagem' src='' alt="Foto Dia">
+               
+          </div>
+
+     </section> 
+     
+      
+
+     <ul type="disc" class="apresentacao">     
+          <li onclick="fctime(1)" onmouseout="fctime()">
+               <img id="img1" src="imagens/apresentacao/manha.png" alt="imagemManha"> 
+          </li> 
+          <li onmousemove="fctime(2)" onmouseout="fctime()">  
+               <img id="img2" src="imagens/apresentacao/dia.png" alt="imagemDia"> 
+          </li>
+          <li onmousemove="fctime(3)" onmouseout="fctime()"> 
+               <img id="img3" src="imagens/apresentacao/tarde.png" alt="imagemTarde"> 
+          </li>
+          <li onmousemove="fctime(4)" onmouseout="fctime()"> 
+               <img id="img4" src="imagens/apresentacao/noite.png" alt="imagemNoite"> 
+          </li>
+          <li onmousemove="fctime(5)" onmouseout="fctime()"> 
+               <img id="img5" src="imagens/apresentacao/madrugada.png" alt="imagemMadrugada"> 
+          </li>
+     </ul>
+
+     <script src="timer.js"></script> 
+
+     <footer class="rodape">
+          <h3> &copy; <strong> MarcioTroise </strong> </h3> 
+     </footer>
+</body>
+</html>
